@@ -17,7 +17,7 @@ import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
 import TableDetails from './pages/TableDetails';
-import UploadFile from './pages/Uploud/UploudFile';
+import UploadFile from './pages/Uploud/UploudFilePms';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);

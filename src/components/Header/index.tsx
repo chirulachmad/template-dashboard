@@ -60,14 +60,14 @@ const Header = (props: {
         <div className="hidden sm:block">
           <form action="https://formbold.com/s/unique_form_id" method="POST">
             <div className="relative">
-              <button className="absolute left-0 top-1/2 -translate-y-1/2">
+              {/*<button className="absolute left-0 top-1/2 -translate-y-1/2">
                 <CiSearch className="fill-current" size={20} />
               </button>
               <input
                 type="text"
                 placeholder="Type to search..."
                 className="w-full bg-transparent pl-9 pr-4 text-black focus:outline-none dark:text-white xl:w-125"
-              />
+              />*/}
             </div>
           </form>
         </div>

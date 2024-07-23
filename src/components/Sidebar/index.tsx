@@ -7,6 +7,7 @@ import { FaWpforms, FaList, FaTable, FaChartPie, FaArrowRightToBracket } from "r
 import { TbListDetails } from "react-icons/tb";
 import { IoMdSettings } from "react-icons/io";
 import { LuLayoutTemplate } from "react-icons/lu";
+import { FaFileDownload } from "react-icons/fa";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -360,6 +361,21 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 }}
               </SidebarLinkGroup>
               {/* <!-- Menu Item LOP --> */}
+
+              {/* <!-- Menu Item Settings --> */}
+              <li>
+  <NavLink
+    to="/Uploud/:id"
+    className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
+      pathname.includes('settings') &&
+      'bg-graydark dark:bg-meta-4'
+    }`}
+  >
+    <FaFileDownload className="fill-current" size={18} />
+    Uploud
+  </NavLink>
+</li>
+              {/* <!-- Menu Item Settings --> */}
             </ul>
           </div>
         </nav>

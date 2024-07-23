@@ -17,6 +17,7 @@ import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
 import TableDetails from './pages/TableDetails';
+import UploadFile from './pages/Uploud/UploudFile';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -152,7 +153,17 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/Uploud/:id"
+          element={
+            <>
+              <PageTitle title="Uploud" />
+              <UploadFile />
+            </>
+          }
+        />
       </Routes>
+
     </DefaultLayout>
   );
 }
